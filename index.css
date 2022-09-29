@@ -1,0 +1,189 @@
+@font-face {
+    font-family: RobotoMonoBold;
+    src: url(./assets/RobotoMono-Bold.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: RobotoMonoBold;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+:root{
+    --monero-orange: #FF6600;
+}
+h1{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: bold;
+    font-size: 5em;
+}
+nav{
+    position: fixed;
+    /* background-color: var(--monero-orange); */
+    color: black;
+    bottom: 1%;
+    /* left: 2rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    border-radius: 5px;
+}
+nav > a{
+    margin-left: 1rem;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;   
+    user-select: none;
+    text-align: center;
+}
+li{
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+
+
+.full-view{
+    height: 100vh;
+}
+.container{
+    margin-left: 1rem;
+}
+.dcontainer{
+    margin-bottom: 1rem;
+}
+
+.grid-center{
+    display: grid;
+    place-items: center;
+}
+
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-change{
+    flex-direction: row;
+}
+.flex-center{
+    align-items: center;
+}
+.flex-gap{
+    gap: 6rem;
+}
+
+.anon-logo{
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+.ui-img{
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+}
+.monero-orange{
+    color: var(--monero-orange);
+}
+.sub-text{
+    font-size: 4em;
+    margin-bottom: .7rem;
+}
+
+.border{
+    padding: 1rem;
+    border: 1px solid #ccc ;
+    border-radius: 16px;
+}
+.btn{
+    padding: 1rem;
+    background-color: var(--monero-orange);
+    border-radius: 16px;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: white;
+}
+
+@media (max-width: 1400px) {
+    .anon-logo{
+        width: 400px;
+        height: auto;
+        object-fit: contain;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .anon-logo{
+        width: 400px;
+        height: auto;
+        object-fit: contain;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .anon-logo{
+        width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+    .ui-img{
+        width: 0;
+    }
+    li{
+        font-size: 1rem;
+    }
+    .btn{
+        padding: .7rem;
+        margin: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .anon-logo{
+        width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+    h1{
+        font-size: 3.3em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    .flex-change{
+        flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .anon-logo{
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+    }
+  }
