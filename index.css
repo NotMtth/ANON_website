@@ -5,6 +5,14 @@
 html{
     scroll-behavior: smooth;
 }
+::selection{
+    background: white;
+    color: black;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body{
     background-color: black;
     color: white;
@@ -26,7 +34,7 @@ nav{
     position: fixed;
     /* background-color: var(--monero-orange); */
     color: black;
-    bottom: 1%;
+    bottom: 0;
     /* left: 2rem; */
     left: 50%;
     transform: translateX(-50%);
@@ -44,14 +52,14 @@ a{
     text-align: center;
 }
 li{
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 1rem;
 }
 
 
 
 .full-view{
-    height: 100vh;
+    height: 95vh;
 }
 .container{
     margin-left: 1rem;
@@ -63,6 +71,21 @@ li{
 .grid-center{
     display: grid;
     place-items: center;
+}
+
+.address{
+    background: black;
+    color: white;
+    resize: none;
+    height: 150px;
+    width: auto;
+    overflow: hidden;
+    box-shadow: none;
+    border: none;
+    font-size: 2em;
+}
+.address:focus{
+    outline: none;
 }
 
 .flex{
@@ -80,6 +103,13 @@ li{
 .flex-gap{
     gap: 6rem;
 }
+.flex-mgap{
+    gap: 3rem;
+}
+.flex-sgap{
+    gap: 1rem;
+}
+
 
 .anon-logo{
     width: 400px;
@@ -87,7 +117,12 @@ li{
     object-fit: contain;
 }
 .ui-img{
-    width: 400px;
+    width: 370px;
+    height: auto;
+    object-fit: contain;
+}
+.qr{
+    width: 370px;
     height: auto;
     object-fit: contain;
 }
@@ -160,6 +195,18 @@ li{
     .btn{
         padding: .7rem;
         margin: auto;
+    }
+    .address{
+        font-size: 1.7em;
+        height: 130px;
+    }
+    .flex-change{
+        flex-direction: column;
+    }
+    .qr{
+        width: 80vw;
+        height: auto;
+        object-fit: contain
     }
   }
   
