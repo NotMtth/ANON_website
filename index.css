@@ -30,32 +30,20 @@ h1{
     font-size: bold;
     font-size: 5em;
 }
-nav{
-    position: fixed;
-    /* background-color: var(--monero-orange); */
-    color: black;
-    bottom: 0;
-    /* left: 2rem; */
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1rem;
-    border-radius: 5px;
-}
-nav > a{
-    margin-left: 1rem;
-}
 a{
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
     user-select: none;
     text-align: center;
+    transition: .3s;
+    color: white;
 }
-li{
-    font-size: 1.3em;
-    margin-bottom: 1rem;
+a:hover{
+    color: var(--monero-orange);
+    text-decoration: underline;
 }
 p{
+    width: 20vw;
     word-break: break-all;
 }
 
@@ -64,11 +52,12 @@ p{
 .full-view{
     height: 95vh;
 }
-.container{
-    margin-left: 1rem;
-}
-.dcontainer{
-    margin-bottom: 1rem;
+
+.fixed{
+    position: fixed;
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .grid-center{
@@ -76,41 +65,14 @@ p{
     place-items: center;
 }
 
-.address{
-    background: black;
-    color: white;
-    resize: none;
-    height: auto;
-    width: 300px;
-    overflow: hidden;
-    box-shadow: none;
-    border: none;
-    font-size: 1.2em;
-}
-.address:focus{
-    outline: none;
-}
-
 .flex{
     display: flex;
-}
-.flex-column{
-    flex-direction: column;
 }
 .flex-change{
     flex-direction: row;
 }
 .flex-center{
     align-items: center;
-}
-.flex-gap{
-    gap: 6rem;
-}
-.flex-mgap{
-    gap: 3rem;
-}
-.flex-sgap{
-    gap: 1rem;
 }
 
 
@@ -119,44 +81,13 @@ p{
     height: auto;
     object-fit: contain;
 }
-.ui-img{
-    width: 370px;
-    height: auto;
-    object-fit: contain;
-}
 .qr{
     width: 370px;
     height: auto;
     object-fit: contain;
 }
-.icon-container{
-    display: flex;
-    justify-content: center;
-}
-.icon{
-    width: 20px;
-    height: auto;
-    object-fit: contain;
-}
 .monero-orange{
     color: var(--monero-orange);
-}
-.sub-text{
-    font-size: 4em;
-    margin-bottom: .7rem;
-}
-
-.border{
-    padding: 1rem;
-    border: 1px solid #ccc ;
-    border-radius: 16px;
-}
-.btn{
-    /* padding: 1.5rem; */
-    padding: 1rem;
-    background-color: var(--monero-orange);
-    border-radius: 16px;
-    /* font-size: 1.2em; */
 }
 
 .text-uppercase{
@@ -191,16 +122,6 @@ p{
         height: auto;
         object-fit: contain;
     }
-    .ui-img{
-        width: 0;
-    }
-    li{
-        font-size: 1rem;
-    }
-    .btn{
-        padding: .7rem;
-        margin: auto;
-    }
     .flex-change{
         flex-direction: column;
     }
@@ -209,8 +130,8 @@ p{
         height: auto;
         object-fit: contain
     }
-    .flex-mgap{
-        gap: 0;
+    p{
+        width: 70vw;
     }
   }
 
